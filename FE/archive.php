@@ -28,6 +28,7 @@
   <?php include "navbar.html";?>
 <?php
 $stock = '/var/data/haubourinavelo_fr/statistique/depot/';
+$corbeille = '/var/data/haubourinavelo_fr/statistique/corbeille/';
 $myuuid = guidv4();
 $date = date( "YmdHis" );
 $finale_file_name = "";
@@ -108,6 +109,7 @@ else
 
 if($error_file === true)
 {
+	rename($stock.$finale_file_name, $corbeille.$finale_file_name);
 	echo "Une erreur est survenu lors du chargement de votre fichier.<br/><br/>Votre fichier est-il bien une archive Géovélo ?<br/><br/>Si oui, merci de ressayer plus tard.";
 }
 
