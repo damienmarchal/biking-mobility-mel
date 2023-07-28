@@ -394,42 +394,47 @@ h6 {
 				l&rsquo;appli geovelo</span></li>
 		<li class="c0 li-bullet-0"><span>Profil -&gt;
 				Param&egrave;tre (</span><span
-			style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 25.77px; height: 25.32px;"><img
-				alt="" src="img/image5.png"
-				style="width: 25.77px; height: 25.32px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-				title=""></span><span class="c1">) -&gt;
+			style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 25.77px; height: 25.32px;">
+			<img src="./img/geovelo_icone_parametre.png" alt="Icone en forme de roue cranté pour les paramètres Géovélo"/>
+				
+				</span><span class="c1">) -&gt;
 				Pr&eacute;f&eacute;rences</span></li>
 		<li class="c0 li-bullet-0"><span>Cliquez sur
 				&ldquo;T&eacute;l&eacute;charger mes donn&eacute;es&rdquo;</span><span
-			style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 327.50px; height: 587.47px;"><img
-				alt="" src="img/image4.png"
-				style="width: 327.50px; height: 587.47px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-				title=""></span></li>
+			style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 327.50px; height: 587.47px;">
+			
+			<img src="./img/geovelo_capture_Telecharger_mes_donnees.png" alt="Capture d'écran de l'application Géovélo sur la page paramètre. Le bouton Télécharger mes données est entouré" style="height: 17px;"/>
+				
+				</span></li>
 		<li class="c0 li-bullet-0"><span class="c1">Validez, un
 				mail sera envoy&eacute; &agrave; l&rsquo;adresse mail
 				associ&eacute;e &agrave; votre compte geovelo.</span></li>
 		<li class="c0 li-bullet-0"><span>Au bout de quelques
 				minutes, vous recevrez un mail, il vous suffit de cliquer sur le
 				bouton &ldquo;T&eacute;l&eacute;charger mes donn&eacute;es&rdquo;</span><span
-			style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 501.50px; height: 284.07px;"><img
-				alt="" src="img/image3.png"
-				style="width: 501.50px; height: 284.07px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-				title=""></span></li>
+			style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 501.50px; height: 284.07px;">
+			
+			<img src="./img/geovelo_capture_mail_Telecharger_mes_donnees.png" alt="Capture d'écran du mail Géovélo permetant de télécharger ses données"/>
+				
+				</span></li>
 		<li class="c0 li-bullet-0"><span>Vous serez
 				redirig&eacute; vers le site web geovelo, apr&egrave;s vous
 				&ecirc;tre identifi&eacute; vous aurez acc&egrave;s au bouton de
 				t&eacute;l&eacute;chargement</span><span
-			style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 408.15px; height: 300.79px;"><img
-				alt="" src="img/image2.png"
-				style="width: 408.15px; height: 300.79px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-				title=""></span></li>
+			style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 408.15px; height: 300.79px;">
+			
+			<img src="./img/geovelo_capture_page_web_Telecharger_mes_donnees.png" alt="Capture d'écran de la page web Géovélo permetant de télécharger ses données"/>
+				
+				
+				</span></li>
 		<li class="c0 li-bullet-0"><span>Une fois
 				t&eacute;l&eacute;charg&eacute;, vous devez d&eacute;zipp&eacute; le
 				fichier, vos traces sont contenus dans le fichier sent_traces.json </span><span
-			style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 502.50px; height: 254.59px;"><img
-				alt="" src="img/image1.png"
-				style="width: 502.50px; height: 254.59px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-				title=""></span></li>
+			style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 502.50px; height: 254.59px;">
+			
+			<img src="./img/geovelo_capture_archive_zip.png" alt="Capture d'écran du contenu de l'archive zip, le fichier contenant les traces est entouré"/>
+				
+				</span></li>
 	</ol>
   <script src="js/vendor/modernizr-3.12.0.min.js"></script>
   <script src="js/app.js"></script>
