@@ -34,16 +34,17 @@
 
   <p class="lead mt-4">    
     Si vous circulez sur la MEL ou les communautés de communes aux alentours et souhaitez contribuer au projet.
-    Vous pouvez envoyer vos traces de circulation téléchargée depuis l'application GéoVélo ou Strava. Après anonymisation celle-ci seront archivées afin de constituer une base de donnée des déplaces métropolitains.     
-    </p>
+    Envoyer vos traces de circulation réalisées via votre application préférée. 
+    Après anonymisation et validation celle-ci seront archivées pour enrichire une base de donnée des déplaces métropolitains.
+  </p>
  
   <form method="post" name="oTeleversement" id="oTeleversement" action="archive.php" enctype="multipart/form-data">
   <div class="form-group">
-  <label for="fichier">Sélectionner un fichier</label>
-  <input type="file" class="form-control-file" id="hFichier" name="hFichier" lang="fr" accept=".zip,.json" />
-  </div>
-  <button class="btn btn-primary" type="submit">Envoyer</button>
-  </form>
+      <label for="fichier">Sélectionner un fichier: </label>
+      <input type="file" class="form-control-file" id="hFichier" name="hFichier" lang="fr" accept=".zip,.json" />
+      </div>
+        <button class="btn btn-primary" type="submit">Envoyer</button>
+      </form>
   </div>
   <script src="js/vendor/modernizr-3.12.0.min.js"></script>
   <script src="js/app.js"></script>

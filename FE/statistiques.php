@@ -29,60 +29,64 @@
 
 <body>
   <!-- Navbar -->
-  <?php include "navbar.html";?>
-  
+  <?php include "navbar.html"; ?>
+
   <div class="mx-auto" style="width: 90%;">
-
-  <p class="lead mt-4 rounded">
-    Nombre de trajets: 768 <br> 
-    Nombre d'utilisateurs: 4 <br> 
-    Nombre de km: (en cours d'analyse) <br> 
-    Nombre trajets / jours: (en cours d'analyse) <br>
-  </p>
-  <p class="lead mt-4">  
-    Classement des équipes #MaiAVélo qui ont le plus contribué à cette base de donnée: 
-    <table id="example" class="display" style="width:100%">
-        <thead>
+    <div>
+      <p class="lead mt-4 rounded">
+        Nombre de trajets: 768 <br>
+        Nombre d'utilisateurs: 4 <br>
+        Nombre de km: (en cours d'analyse) <br>
+        Nombre trajets / jours: (en cours d'analyse) <br>
+      </p>
+      <div class="mt-4">
+        <p class="lead mt-4">
+          Historique des soumissions:
+        </p>
+        <table id="example2" class="display" style="width:100%">
+          <thead>
             <tr>
-                <th>Nom équipe</th>
-                <th>Nombre de traces</th>
-                <th>Nombre de km</th>
+              <th>Date soumission</th>
+              <th>Nombre de traces</th>
+              <th>km (Total)</th>
             </tr>
-        </thead>
-  </p>
-  </div>   
+          </thead>
+        </table>
+      </div>
 
-  <p class="lead mt-4">  
-    Classement des équipes #MaiAVélo qui ont le plus contribué à cette base de donnée: 
-    <table id="example2" class="display" style="width:100%">
+
+      <p class="lead mt-4">
+        Classement des équipes #MaiAVélo qui ont le plus contribué à cette base de donnée:
+      </p>
+      <table id="example" class="display" style="width:100%">
         <thead>
-            <tr>
-                <th>Date soumission</th>
-                <th>Nombre de traces</th>
-                <th>km (Total)</th>                
-            </tr>
+          <tr>
+            <th>Nom équipe</th>
+            <th>Nombre de traces</th>
+            <th>Nombre de km</th>
+          </tr>
         </thead>
-  </p>
-  </div>   
-  
-  <script language="javascript">
-    new DataTable('#example', {
-      ajax: './data/contributions.json',
-      columns : [
-        {"data" : "name"},
-        {"data" : "trace-count"},
-        {"data" : "distance"}
-      ]
-    });
-    new DataTable('#example2', {
-      ajax: './data/contributions2.json',
-      columns : [
-        {"data" : "date"},
-        {"data" : "trace-count"},
-        {"data" : "distance"}
-      ]
-    });
-  </script>   
+      </table>
+    </div>
+
+    <script language="javascript">
+      new DataTable('#example', {
+        ajax: './data/contributions.json',
+        columns: [
+          { "data": "name" },
+          { "data": "trace-count" },
+          { "data": "distance" }
+        ]
+      });
+      new DataTable('#example2', {
+        ajax: './data/contributions2.json',
+        columns: [
+          { "data": "date" },
+          { "data": "trace-count" },
+          { "data": "distance" }
+        ]
+      });
+    </script>
 
 </body>
 
