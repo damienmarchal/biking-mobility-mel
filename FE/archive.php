@@ -26,10 +26,11 @@
 </head>
 
 <body>
-	<?php include "navbar.html"; ?>
+	<?php include "navbar.php"; ?>
 	<?php
-	$stock = '/var/data/haubourinavelo_fr/statistique/depot/';
-	$corbeille = '/var/data/haubourinavelo_fr/statistique/corbeille/';
+	$conf_array = parse_ini_file('config.ini', true);
+	$stock = $conf_array['depot']['stock'];
+	$corbeille = $conf_array['depot']['corbeille'];
 	$myuuid = guidv4();
 	$date = date("YmdHis");
 	$finale_file_name = "";

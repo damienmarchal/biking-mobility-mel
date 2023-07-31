@@ -27,7 +27,7 @@
 
 <body>
   <!-- Navbar -->
-  <?php include "navbar.html";?>
+  <?php include "navbar.php";?>
   
   <div class="mx-auto text-center mt-4" style="width: 90%;">    
     Exemple d'usage des données qu'on fait les membres du collectifs. 
