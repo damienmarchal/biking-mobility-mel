@@ -29,15 +29,14 @@
 
 <body>
   <!-- Navbar -->
-  <?php include "navbar.php"; ?>
+  <?php include "navbar.php";?>
 
   <div class="mx-auto" style="width: 90%;">
     <div>
       <p class="lead mt-4 rounded">
-        Nombre de trajets: 768 <br>
-        Nombre d'utilisateurs: 4 <br>
-        Nombre de km: (en cours d'analyse) <br>
-        Nombre trajets / jours: (en cours d'analyse) <br>
+        Nombre des soumissions: <span id="count">...</span> <br>
+        Nombre de trajets: <span id="trace_count">...</span> <br>
+        Nombre de km: <span id="total_distance">...</span> <br>
       </p>
       <div class="mt-4">
         <p class="lead mt-4">
@@ -70,8 +69,21 @@
     </div>
 
     <script language="javascript">
+      $.ajax({
+        url: '<?php echo $backend; ?>/status',
+        dataType: "json",
+        cache : false,
+        success: function(json)
+        {
+          for (const [key, value] of Object.entries(json)) 
+          {
+            $("#"+key).replaceWith(value)
+          }
+        }
+      })
+
       new DataTable('#example', {
-        ajax: './data/contributions.json',
+        ajax: '<?php echo $frontend; ?>/data/contributions.json',
         columns: [
           { "data": "name" },
           { "data": "trace-count" },
@@ -79,13 +91,20 @@
         ]
       });
       new DataTable('#example2', {
-        ajax: './data/contributions2.json',
+        ajax: 
+          {
+            "url": '<?php echo $backend; ?>/submission_history',
+            "dataType" : "json",
+            "dataSrc" : ""
+          },        
         columns: [
           { "data": "date" },
-          { "data": "trace-count" },
-          { "data": "distance" }
+          { "data": "trace_count" },
+          { "data": "total_distance" }
         ]
       });
+
+      
     </script>
 
 </body>

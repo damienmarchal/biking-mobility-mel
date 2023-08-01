@@ -30,7 +30,7 @@
   <?php include "navbar.php";?>
   
   <div class="mx-auto text-center mt-4" style="width: 90%;">    
-    Exemple d'usage des données qu'on fait les membres du collectifs. 
+    Exemple d'usages des données fait par les membres du collectif. 
 
     <div class="container mt-5">
       <div class="row">
