@@ -28,7 +28,7 @@
 
 <body>
   <!-- Navbar -->
-  <?php include "navbar.html";?>
+  <?php include "navbar.php";?>
 
   <div class="mx-auto" style="width: 90%;">
 

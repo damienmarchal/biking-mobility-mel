@@ -97,3 +97,11 @@ a:focus {
  background-color: #384452;
  border-color: transparent;
 }
+
+/* Message d'information */
+.alert{
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  left: 15px;
+}

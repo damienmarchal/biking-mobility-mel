@@ -379,7 +379,7 @@ h6 {
 
 <body>
   <!-- Navbar -->
-  <?php include "navbar.html";?>
+  <?php include "navbar.php";?>
    
   <!-- Add your site or application content here -->
   	<p class="c7 subtitle" id="h.5zqum3kcdx3g">

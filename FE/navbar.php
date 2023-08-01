@@ -4,6 +4,14 @@
 <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.js"></script>
 <script src="js/bootstrap.js"></script>
 
+<!-- information environnement de dev -->
+<?php
+$conf_array = parse_ini_file('config.ini', true);
+if( $conf_array['GENERAL']['env'] === 'dev')
+{
+	echo '<span class="badge bg-danger"><strong>Attention !</strong> Vous êtes sur l\'environnement de dev.</span>';
+}
+?>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
