@@ -7,6 +7,16 @@
 <!-- information environnement de dev -->
 <?php
 $conf_array = parse_ini_file('config.ini', true);
+if(!$conf_array)
+{
+  $conf_array["GENERAL"]["backend-ip"] = "127.0.0.1";
+  $conf_array["GENERAL"]["backend-port"] = "7779";
+  $conf_array["GENERAL"]["frontend-ip"] = "127.0.0.1";
+  $conf_array["GENERAL"]["frontend-port"] = "8000";
+}
+$backend = "http://" . $conf_array["GENERAL"]["backend-ip"] . ":" . $conf_array["GENERAL"]["backend-port"];
+$frontend = "http://" . $conf_array["GENERAL"]["frontend-ip"] . ":" . $conf_array["GENERAL"]["frontend-port"];
+
 if( $conf_array['GENERAL']['env'] === 'dev')
 {
 	echo '<span class="badge bg-danger"><strong>Attention !</strong> Vous êtes sur l\'environnement de dev.</span>';
