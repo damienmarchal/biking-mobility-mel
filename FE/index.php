@@ -52,10 +52,10 @@
     <div class="container mt-5 text-center">
       <div class="row">
         <div class="col-sm">
-          <a href="<a class=" nav-link" href="depot.php">Déposer ses traces GPS</a>
+          <a class="nav-link" href="depot.php">Déposer ses traces GPS</a>
         </div>
         <div class="col-sm">
-          <a href="<a class=" nav-link" href="en-parler.php">Parlez en autour de vous</a>
+          <a class="nav-link" href="en-parler.php">Parlez en autour de vous</a>
         </div>
       </div>
     </div>
