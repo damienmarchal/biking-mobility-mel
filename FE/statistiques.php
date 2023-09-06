@@ -32,41 +32,40 @@
   <?php include "navbar.php";?>
 
   <div class="mx-auto" style="width: 90%;">
-    <div>
-      <p class="lead mt-4 rounded">
-        Nombre des soumissions: <span id="count">...</span> <br>
-        Nombre de trajets: <span id="trace_count">...</span> <br>
-        Nombre de km: <span id="total_distance">...</span> <br>
-      </p>
-      <div class="mt-4">
-        <p class="lead mt-4">
-          Historique des soumissions:
-        </p>
-        <table id="example2" class="display" style="width:100%">
-          <thead>
-            <tr>
-              <th>Date soumission</th>
-              <th>Nombre de traces</th>
-              <th>km (Total)</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
+	  <p class="lead mt-4 rounded">
+		Nombre des soumissions: <span id="count">...</span> <br>
+		Nombre de trajets: <span id="trace_count">...</span> <br>
+		Nombre de km: <span id="total_distance">...</span> <br>
+	  </p>
+	  <div class="mt-4">
+		<p class="lead mt-4">
+		  Historique des soumissions:
+		</p>
+		<table id="example2" class="display" style="width:100%">
+		  <thead>
+			<tr>
+			  <th>Date soumission</th>
+			  <th>Nombre de traces</th>
+			  <th>km (Total)</th>
+			</tr>
+		  </thead>
+		</table>
+	  </div>
 
 
-      <p class="lead mt-4">
-        Classement des équipes #MaiAVélo qui ont le plus contribué à cette base de donnée:
-      </p>
-      <table id="example" class="display" style="width:100%">
-        <thead>
-          <tr>
-            <th>Nom équipe</th>
-            <th>Nombre de traces</th>
-            <th>Nombre de km</th>
-          </tr>
-        </thead>
-      </table>
-    </div>
+	  <p class="lead mt-4">
+		Classement des équipes #MaiAVélo qui ont le plus contribué à cette base de donnée:
+	  </p>
+	  <table id="example" class="display" style="width:100%">
+		<thead>
+		  <tr>
+			<th>Nom équipe</th>
+			<th>Nombre de traces</th>
+			<th>Nombre de km</th>
+		  </tr>
+		</thead>
+	  </table>
+	</div>
 
     <script language="javascript">
       $.ajax({

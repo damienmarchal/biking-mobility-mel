@@ -19,7 +19,7 @@ $frontend = "http://" . $conf_array["GENERAL"]["frontend-ip"] . ":" . $conf_arra
 
 if( $conf_array['GENERAL']['env'] === 'dev')
 {
-	echo '<span class="badge bg-danger"><strong>Attention !</strong> Vous êtes sur l\'environnement de dev.</span>';
+	echo '<div align="center"><span class="badge bg-danger"><strong>Attention !</strong> Vous êtes sur l\'environnement de dev.</span></div>';
 }
 ?>
 
