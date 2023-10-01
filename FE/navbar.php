@@ -6,7 +6,13 @@
 
 <!-- information environnement de dev -->
 <?php
-$conf_array = parse_ini_file('config.ini', true);
+
+// Read the JSON file 
+$json_content = file_get_contents('../config.json');
+  
+// Decode the JSON file
+$conf_array = json_decode($json_content, true);
+
 if(!$conf_array)
 {
   $conf_array["GENERAL"]["backend-ip"] = "127.0.0.1";
@@ -21,6 +27,7 @@ if( $conf_array['GENERAL']['env'] === 'dev')
 {
 	echo '<div align="center"><span class="badge bg-danger"><strong>Attention !</strong> Vous êtes sur l\'environnement de dev.</span></div>';
 }
+
 ?>
 
 <!-- Navbar -->

@@ -6,8 +6,8 @@
 		"frontend-port" : 8000,
 		"backend-ip" : "127.0.0.1",
 		"backend-port" : 7779,
-		"trace-storage" : "data/", 
-		"trace-backup" : "data-backup/",
-		"data-cache"   : "data-cache/" 
+		"trace-storage" : "../data/", 
+		"trace-backup" : "../data-backup/",
+		"data-cache"   : "../cache/" 
 	}
 }
