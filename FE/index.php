@@ -54,8 +54,8 @@
         <div class="col-sm">
           <a class="nav-link" href="depot.php">Déposer ses traces GPS</a>
         </div>
-        <div class="col-sm">
-          <a class="nav-link" href="en-parler.php">Parlez en autour de vous</a>
+        <div class="col-sm invisible">
+          <a class="nav-link invisible" href="en-parler.php">Parlez en autour de vous</a>
         </div>
       </div>
     </div>
