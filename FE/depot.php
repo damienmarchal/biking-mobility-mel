@@ -39,18 +39,32 @@
   </p>
  
   <form method="post" name="oTeleversement" id="oTeleversement" action="archive.php" enctype="multipart/form-data">
-  <div class="form-group">
-      <label for="fichier">Sélectionner un fichier: </label>
-      <input type="file" class="form-control-file" id="hFichier" name="hFichier" lang="fr" accept=".zip,.json" />
+      <div class="form-group">
+        <label for="fichier">Sélectionnez un fichier: </label>
+        <input type="file" class="form-control-file" id="hFichier" name="hFichier" lang="fr" accept=".zip,.json" />
       </div>
-        <button class="btn btn-primary" type="submit">Envoyer</button>
+      <br>
+      <div class="form-group">
+        Dans quelles équipes avez vous participé (plusieurs choix possible):
+        <select class="form-select" aria-label="Default select example" id="hTeams">
+          <option selected value="none">...</option>
+          <option value="Haubourdin en selle">Haubourdin en selle</option>
+          <option value="Roule pour Santes">Roule pour Santes</option>
+          <option value="CCPC à vélo">CCPC à vélo</option>
+        </select>
+      </div>
+      <div>
+      <br>
+      <center>
+      <button class="btn btn-primary" type="submit">Envoyer</button>
+      </center>
+      </div>
       </form>
   </div>
+
   <script src="js/vendor/modernizr-3.12.0.min.js"></script>
   <script src="js/app.js"></script>
-
   <script src="js/bootstrap.js"></script>
-
 </body>
 
 </html>

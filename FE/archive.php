@@ -28,13 +28,24 @@
 <body>
 	<?php include "navbar.php"; ?>
 	<?php
-	$conf_array = parse_ini_file('config.ini', true);
-	$stock = $conf_array['depot']['stock'];
-	$corbeille = $conf_array['depot']['corbeille'];
+
+	$stock = $conf_array["GENERAL"]["trace-storage"];
+	$corbeille = $conf_array["GENERAL"]["trace-garbage"];
+
+	//$name = $_POST["hTeams"];
+	//echo("$name");
+
 	$myuuid = guidv4();
 	$date = date("YmdHis");
 	$finale_file_name = "";
 	$error_file = false;
+	if (!array_key_exists("hFichier", $_FILES))
+	{
+		$max_size = ini_get('post_max_size');
+		echo "Une erreur est survenu lors du chargement de votre fichier. La limite de taille maximale autorisée ($max_size) a été dépassée.";
+		return; 
+	}
+
 	if (is_resource($zip = zip_open($_FILES['hFichier']['tmp_name']))) {
 		//this is a zip archive
 		$finale_file_name = $date . "_sent_traces_" . $myuuid . ".json";
