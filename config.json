@@ -6,8 +6,20 @@
 		"frontend-port" : 8000,
 		"backend-ip" : "127.0.0.1",
 		"backend-port" : 7779,
+		"trace-garbage" : "../data-garbage/",
 		"trace-storage" : "../data/", 
 		"trace-backup" : "../data-backup/",
 		"data-cache"   : "../cache/" 
+	},
+	"BACKEND":
+	{
+		"force-refresh" : false,
+		"path_to_state" : "../backend-state",
+		"allow-origins" : [
+			"http://127.0.0.1:8000",
+			"https://127.0.0.1:8000",
+			"http://localhost:8000",
+			"https://localhost:8000"
+		]
 	}
 }
