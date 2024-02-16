@@ -1,8 +1,9 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="js/vendor/modernizr-3.12.0.min.js"></script>
-<script src="js/app.js"></script>
-<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.js"></script>
-<script src="js/bootstrap.js"></script>
+<link href="css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 
 <!-- information environnement de dev -->
 <?php
@@ -23,52 +24,49 @@ if(!$conf_array)
 $backend = "http://" . $conf_array["GENERAL"]["backend-ip"] . ":" . $conf_array["GENERAL"]["backend-port"];
 $frontend = "http://" . $conf_array["GENERAL"]["frontend-ip"] . ":" . $conf_array["GENERAL"]["frontend-port"];
 
-if( $conf_array['GENERAL']['env'] === 'dev')
-{
-	echo '<div align="center"><span class="badge bg-danger"><strong>Attention !</strong> Vous êtes sur l\'environnement de dev.</span></div>';
-}
-
 ?>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-    <!-- Toggle button -->
-    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Navbar brand -->
-      <a class="navbar-brand mt-2 mt-lg-0" href="#">
-        <img src="./img/Ronde des logos 64x64.gif" height="16" alt="Logos des differents collectifs" loading="lazy" />
-      </a>
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-light-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index.php">Le projet</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="depot.php">Déposer ses données</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="statistiques.php">Statistiques</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="exemples.php">Exemples d'utilisations des données</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tuto.php">Comment récupérer ses traces Géovélo ?</a>
-        </li>
-      </ul>
-      <!-- Left links -->
+<div class="fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-navbar">
+<?php
+if( $conf_array['GENERAL']['env'] === 'dev')
+{
+	echo '<div class="fixed-top" align="center"><span class="badge bg-danger" align="center"><strong>Attention !</strong> Vous êtes sur l\'environnement de dev.</span></div>';
+}
+  echo '<div class="container-fluid';
+if( $conf_array['GENERAL']['env'] === 'dev')
+{
+  echo ' pt-4';
+}
+  echo '">';
+?>
+  <a class="navbar-brand" href="index.php"><img src="./img/Ronde des logos 64x64.gif" height="16" alt="Logos des differents collectifs" loading="lazy" /></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.php">Le projet</span></a>
+      <a class="nav-item nav-link" href="depot.php">Déposer ses données</a>
+      <a class="nav-item nav-link" href="statistiques.php">Statistiques</a>
+      <a class="nav-item nav-link" href="exemples.php">Exemples d'utilisations des données</a>
+      <a class="nav-item nav-link" href="tuto.php">Comment récupérer ses traces Géovélo ?</a>
     </div>
-    <!-- Collapsible wrapper -->
-
   </div>
-  <!-- Container wrapper -->
-</nav>
+  </div>
+</nav></div>
 <!-- Navbar -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+<script>
+$(window).on("resize",function () {
+               $('body').css('padding-top', parseInt($('#main-navbar').css("height")));
+            });
+ 
+$(window).on("load",function () {
+               $('body').css('padding-top', parseInt($('#main-navbar').css("height")));        
+});
+</script>
